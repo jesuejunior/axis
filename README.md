@@ -35,6 +35,15 @@ for coverage
     make cov
 ```
 
+Coverage summary
+
+```shell
+    Statements   : 68.8% ( 86/125 )
+    Branches     : 60% ( 12/20 )
+    Functions    : 57.14% ( 4/7 )
+    Lines        : 70.59% ( 84/119 )
+```
+
 
 Especification
 
