@@ -1,0 +1,16 @@
+.git
+*.sqlite3
+.idea
+*.md
+.coverage
+*.log
+test
+*.*.*.test*
+.vagrant
+.cache
+Vagrantfile
+README.md
+LICENSE
+docker-compose.yml
+node_modules
+./~

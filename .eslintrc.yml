@@ -1,0 +1,7 @@
+extends: airbnb-base
+plugins:
+  - import
+
+# rules:
+#   - "no-underscore-dangle": [2, { "exceptions": [ "_id" ] }]
+#  - 'import/newline-after-import': off

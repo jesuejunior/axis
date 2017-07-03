@@ -1,0 +1,41 @@
+{
+  "name": "axis",
+  "version": "1.0.0",
+  "description": "Example nodejs(restify) API",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jesuejunior/axis.git"
+  },
+  "keywords": [
+    "node",
+    "restify"
+  ],
+  "author": "Jesue Junior",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/jesuejunior/axis/issues"
+  },
+  "homepage": "https://github.com/jesuejunior/axis#readme",
+  "dependencies": {
+    "bunyan": "^1.8.5",
+    "lodash": "^4.17.4",
+    "mongoose": "^4.10.8",
+    "restify": "^4.3.0",
+    "restify-router": "^0.4.2"
+  },
+  "devDependencies": {
+    "chai": "3.5.0",
+    "eslint": "^4.1.1",
+    "eslint-config-airbnb-base": "^11.1.0",
+    "eslint-plugin-import": "^2.6.0",
+    "istanbul": "0.4.5",
+    "mocha": "3.2.0",
+    "nodemon": "1.11.0",
+    "sinon": "2.3.1",
+    "supertest": "2.0.1"
+  }
+}
