@@ -54,12 +54,11 @@ describe('Integration test Remove By Id', () => {
       });
 
       request(server)
-        .delete('/veiculos/5959b360def4235b602182a2')
+        .del('/veiculos/5959b360def4235b602182a2')
         .expect('Content-Type', 'application/json')
         .expect(204, done());
 
       Vehicle.count({}).exec((err, count) => {
-        console.log('444444444444444', err, count);
         expect(count).to.equal(1);
         done();
       });
