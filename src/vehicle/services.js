@@ -27,9 +27,7 @@ class VehicleService {
   }
 
   update(id, data) {
-    const vehicle = Vehicle.findOneAndUpdate({ _id: id }, data, (err, doc) => {
-      logger.info('updating vehicle', data, 'to', doc);
-    }).exec();
+    const vehicle = Vehicle.findOneAndUpdate(id, data).exec();
     return vehicle;
   }
 }

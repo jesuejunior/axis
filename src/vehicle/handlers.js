@@ -38,13 +38,22 @@ const registerRoutes = (app, service) => {
     next();
   });
 
+  // FIXME: It wasnt tested
   handler.put('/veiculos/:id', (req, res, next) => {
-    res.send(204, {});
+    const id = req.params.id;
+    service.update(id).then((result) => {
+      logger.info(`Updating vehicle id: ${id}`, result);
+      res.send(204);
+    });
     next();
   });
-
+  // FIXME: It wasnt tested
   handler.patch('/veiculos/:id', (req, res, next) => {
-    res.send(204);
+    const id = req.params.id;
+    service.update(id).then((result) => {
+      logger.info(`Updating vehicle id: ${id}`, result);
+      res.send(204);
+    });
     next();
   });
 
