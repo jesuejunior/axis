@@ -1,0 +1,7 @@
+
+mongo:
+  image: mongo:3.4
+  expose:
+    - 27017
+  ports:
+    - "27017:27017"
