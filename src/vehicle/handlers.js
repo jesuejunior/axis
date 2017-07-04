@@ -41,7 +41,8 @@ const registerRoutes = (app, service) => {
   // FIXME: It wasnt tested
   handler.put('/veiculos/:id', (req, res, next) => {
     const id = req.params.id;
-    service.update(id).then((result) => {
+    const body = req.body;
+    service.update(id, body).then((result) => {
       logger.info(`Updating vehicle id: ${id}`, result);
       res.send(204);
     });
@@ -50,7 +51,8 @@ const registerRoutes = (app, service) => {
   // FIXME: It wasnt tested
   handler.patch('/veiculos/:id', (req, res, next) => {
     const id = req.params.id;
-    service.update(id).then((result) => {
+    const body = req.body;
+    service.update(id, body).then((result) => {
       logger.info(`Updating vehicle id: ${id}`, result);
       res.send(204);
     });

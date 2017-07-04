@@ -9,8 +9,9 @@ const vehicleSchema = mongoose.Schema({
 
 }, { collection: 'vehicle' });
 
-vehicleSchema.pre('save', function (next) {
-  this.updated = Date.now;
+
+vehicleSchema.pre('findOneAndUpdate', (next) => {
+  this.update = new Date();
   next();
 });
 

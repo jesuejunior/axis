@@ -27,6 +27,7 @@ class VehicleService {
   }
 
   update(id, data) {
+    data.updated = Date.now(); // FIXME: fix hook on update
     const vehicle = Vehicle.findOneAndUpdate(id, data).exec();
     return vehicle;
   }
