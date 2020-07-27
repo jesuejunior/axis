@@ -23,7 +23,7 @@
   "dependencies": {
     "bunyan": "^1.8.5",
     "lodash": "^4.17.4",
-    "mongoose": "^4.10.8",
+    "mongoose": "^5.9.25",
     "restify": "^4.3.0",
     "restify-router": "^0.4.2"
   },
